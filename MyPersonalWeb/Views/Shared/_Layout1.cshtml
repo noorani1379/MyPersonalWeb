@@ -1,0 +1,106 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Alireza Noorani's personal portfolio website">
+    <meta name="keywords" content=" علیرضا نورانی, علیرضانورانی دگرماندرق, alireza nourani, alireza noorani,اشکان نورانی">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="alireza nourani,علیرضا نورانی">
+
+    <title>@ViewData["Title"]Alireza Nourani</title>
+    <link rel="icon" type="image/x-icon" href="~/assets2/images/favicon.png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/assets1/css/iconoir.css">
+    <link rel="stylesheet" href="~/assets1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets1/css/aos.css">
+    <link rel="stylesheet" href="~/assets1/css/style.css">
+</head>
+<body>
+    
+    <main class="main-homepage">
+
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a asp-action="Index2" asp-controller="Home" class="logo">
+                        <img src="~/assets1/images/logo.svg" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li class="active"><a asp-action="Index1" asp-controller="Home">Home</a></li>
+                            <li ><a asp-action="About" asp-controller="Home">About</a></li>
+                            <li><a asp-action="Works" asp-controller="Home">Works</a></li>
+                            <li><a asp-action="Blog" asp-controller="Home">Blog</a></li>
+                            <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                            <li><a asp-action="Index2" asp-controller="Home">Theme <i class="iconoir-color-picker" style="font-size: 1rem; width: 0; "></i></a></li>
+                        </ul>
+
+                     
+
+                        <a asp-action="Contact" asp-controller="Home" class="theme-btn">Let's talk</a>
+                        <a asp-action="Index2" asp-controller="Home" class="theme-btn" style="padding: 0; width: 0; margin-left: .5rem;">
+                            <i class="iconoir-sun-light" style="font-size: 1.7rem; color: gold;"></i>
+                        </a>
+
+                    </nav>
+
+                    <a asp-action="Contact" asp-controller="Home" class="theme-btn">Let's talk</a>
+
+
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+       @RenderBody()
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <a asp-action="Index2" asp-controller="Home" class="logo">
+                        <img src="~/assets1/images/logo.svg" alt="Logo">
+                    </a>
+                    <ul class="footer-menu">
+                        <li><a asp-action="Index1" asp-controller="Home">Home</a></li>
+                        <li><a asp-action="About" asp-controller="Home">About</a></li>
+                        <li><a asp-action="Works" asp-controller="Home">Works</a></li>
+                        <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                        <li><a asp-action="Blog" asp-controller="Home">Blog</a></li>
+                        <li><a asp-action="Index2" asp-controller="Home">Theme <i class="iconoir-color-picker" style="font-size: 1rem; width: 0; "></i></a></li>
+                    </ul>
+                    <p class="copyright">
+                        &copy; All rights registered by <span>GREAT Dev.</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    
+    <script src="~/assets1/js/jquery-3.6.4.js" defer></script>
+    <script src="~/assets1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="~/assets1/js/aos.js" defer></script>
+    <script src="~/assets1/js/main.js" defer></script>
+   
+    
+</body>
+
+
+</html>
